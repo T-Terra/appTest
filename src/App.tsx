@@ -5,12 +5,14 @@ import MinMax from "./components/MinMax"
 import Oficial, { Comp2, Comp3 } from "./components/Mult";
 import Primeiro from "./components/Primeiro";
 import RandomValue from "./components/Random"
+import Titulo from "./components/Titulo"
 
 export default () => (
     <SafeAreaView style={Style.App}>
-        <RandomValue min={1} max={60}/>
-        <RandomValue min={1} max={60}/>
+        <Titulo principal="Cadastro produto" secundario="Tela de cadastro do produto"/>
         {/*
+        <RandomValue min={1} max={60}/>
+        <RandomValue min={1} max={60}/>
         <MinMax min={3} max={20}/>
         <Oficial/>
         <Comp2/>
