@@ -4,11 +4,14 @@ import { SafeAreaView, StyleSheet } from "react-native";
 import MinMax from "./components/MinMax"
 import Oficial, { Comp2, Comp3 } from "./components/Mult";
 import Primeiro from "./components/Primeiro";
+import RandomValue from "./components/Random"
 
 export default () => (
     <SafeAreaView style={Style.App}>
-        <MinMax min={3} max={20}/>
+        <RandomValue min={1} max={60}/>
+        <RandomValue min={1} max={60}/>
         {/*
+        <MinMax min={3} max={20}/>
         <Oficial/>
         <Comp2/>
         <Comp3/>
