@@ -12,11 +12,30 @@ import Contador from "./components/Contador"
 import Pai from "./components/indireta/Pai"
 import ContadorV2 from "./components/contador/ContadorV2"
 import Plataforma from "./components/OSSystem"
+import ParImpar from "./components/ParImpar"
+import Familia from "./components/relacao/Familia";
+import Membros from "./components/relacao/Membros";
+import UsuarioLogado from "./components/UsuarioLogado";
 
 export default () => (
     <SafeAreaView style={Style.App}>
-        <Plataforma/>
+        <UsuarioLogado usuario={{nome: "Gui", email: "gui@gui.com"}}/>
+        <UsuarioLogado usuario={{nome: "Maria"}}/>
+        <UsuarioLogado usuario={{email: "maria@gmail.com"}}/>
+        <UsuarioLogado usuario={null}/>
         {/*
+        <Familia>
+            <Membros nome="Ana" sobrenome="Silva"/>
+            <Membros nome="Julia" sobrenome="Silva"/>
+        </Familia>
+        <Familia>
+            <Membros nome="Marcos" sobrenome="Arruda"/>
+            <Membros nome="Rafaela" sobrenome="Arruda"/>
+            <Membros nome="Henrique" sobrenome="Arruda"/>
+            <Membros nome="Gabriel" sobrenome="Arruda"/>
+        </Familia>
+        <ParImpar num={11}/>
+        <Plataforma/>
         <ContadorV2/>
         <Pai/>
         <Pai/>
