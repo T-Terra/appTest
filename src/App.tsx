@@ -10,11 +10,13 @@ import BotaoExc from "./components/Botao"
 import Contador from "./components/Contador"
 //import Pai from "./components/direta/Pai"
 import Pai from "./components/indireta/Pai"
+import ContadorV2 from "./components/contador/ContadorV2"
 
 export default () => (
     <SafeAreaView style={Style.App}>
-        <Pai/>
+        <ContadorV2/>
         {/*
+        <Pai/>
         <Pai/>
         <Contador/>
         <Contador inicial={10} passo={50}/>
