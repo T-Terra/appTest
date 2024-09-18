@@ -16,14 +16,16 @@ import ParImpar from "./components/ParImpar"
 import Familia from "./components/relacao/Familia";
 import Membros from "./components/relacao/Membros";
 import UsuarioLogado from "./components/UsuarioLogado";
+import ListaProdutos from "./components/produtos/ListaProdutos";
 
 export default () => (
     <SafeAreaView style={Style.App}>
+        <ListaProdutos/>
+        {/*
         <UsuarioLogado usuario={{nome: "Gui", email: "gui@gui.com"}}/>
         <UsuarioLogado usuario={{nome: "Maria"}}/>
         <UsuarioLogado usuario={{email: "maria@gmail.com"}}/>
         <UsuarioLogado usuario={null}/>
-        {/*
         <Familia>
             <Membros nome="Ana" sobrenome="Silva"/>
             <Membros nome="Julia" sobrenome="Silva"/>
